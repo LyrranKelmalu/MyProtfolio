@@ -6,25 +6,39 @@
       I am a beginner web developer.<br>
       I'm studying at college as a system administrator.
     </p>
+    <div class="reg_form">
+      <form action="save_user.php" method="post">
+        <p>
+          <label>Login:</label>
+          <input name="login" type="text" size="15" maxlength="15"><br>
+        </p>
+        <p>
+          <label>Password:</label>
+          <input name="password" type="password" size="15" maxlength="15"><br>
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Registration">
+        </p></form>
+    </div>
     <h3>My skills</h3>
     <ul>
-      <li><img src="" alt="">HTML</li>
-      <li><img src="" alt="">CSS(SCSS/SASS)</li>
-      <li><img src="" alt="">JS(JQUERY, VUE.JS)</li>
-      <li><img src="" alt="">PHP</li>
-      <li><img src="" alt="">MySQL</li>
+      <li><img src="../assets/html_logo_300x300.png" alt=""><p>HTML</p></li>
+      <li><img src="../assets/css_logo_300x300.png" alt=""><p>CSS(SCSS/SASS)</p></li>
+      <li><img src="../assets/javascript_logo_300x300.png" alt=""><p>JS(JQUERY, VUE.JS)</p></li>
     </ul>
     <h3>My Git</h3>
     <ul>
       <li><a href="https://github.com/LyrranKelmalu/" target="_blank" rel="noopener">LyrranKelmalu</a></li>
     </ul>
-    <h3>Contact Links</h3>
-    <ul>
-      <li><a href="https://twitter.com/LyrranK" target="_blank" rel="Twitter">Twitter</a></li>
-      <li><a href="https://www.instagram.com/lyrran_kelmalu/" target="_blank" rel="insta">Instagram</a></li>
-      <li><a href="https://vk.com/lyrra" target="_blank" rel="vk">VK</a></li>
-      <li><a href="https://www.facebook.com/roman.pappinen.1/" target="_blank" rel="noopener">FaceBook</a></li>
-    </ul>
+    <div class="footer">
+      <h3>Contact Links</h3>
+      <ul>
+        <li><a href="https://twitter.com/LyrranK" target="_blank" rel="Twitter">Twitter</a></li>
+        <li><a href="https://www.instagram.com/lyrran_kelmalu/" target="_blank" rel="insta">Instagram</a></li>
+        <li><a href="https://vk.com/lyrra" target="_blank" rel="vk">VK</a></li>
+        <li><a href="https://www.facebook.com/roman.pappinen.1/" target="_blank" rel="noopener">FaceBook</a></li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -52,5 +66,27 @@ li {
 }
 a {
   color: #42b983;
+}
+.reg_form{
+  width: 30%;
+  margin: 0 auto;
+  border: solid 2px #000000;
+}
+@media only screen and (max-width: 1440px) {
+  .reg_form{
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .reg_form{
+    width: 90%;
+  }
+}
+  input{
+    width: 30%;
+  }
+
+.footer{
+  height: 100px;
 }
 </style>
