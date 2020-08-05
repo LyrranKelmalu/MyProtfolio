@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img id="my_face" alt="Vue logo" src="./assets/my_photo.jpg">
-    <HelloWorld msg="Welcome to my porfolio"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/mainPage.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  methods: {
+
   }
 }
 </script>
@@ -30,4 +30,15 @@ export default {
   width: 250px;
   height: 250px;
 }
+
+  h1{
+    font-family: "Permanent Marker";
+  }
+  h2{
+    font-family: "Permanent Marker";
+  }
+  p{
+    font-family: "Permanent Marker";
+    font-size: 23px;
+  }
 </style>
